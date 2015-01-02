@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FED59FF41A5697AA00299C67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FED59FF31A5697AA00299C67 /* Foundation.framework */; };
+		FED59FF61A5697AA00299C67 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FED59FF51A5697AA00299C67 /* CoreGraphics.framework */; };
+		FED59FF81A5697AA00299C67 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FED59FF71A5697AA00299C67 /* UIKit.framework */; };
+		FED59FFE1A5697AA00299C67 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FED59FFC1A5697AA00299C67 /* InfoPlist.strings */; };
+		FED5A0001A5697AA00299C67 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FED59FFF1A5697AA00299C67 /* main.m */; };
+		FED5A0041A5697AA00299C67 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FED5A0031A5697AA00299C67 /* AppDelegate.m */; };
+		FED5A0061A5697AA00299C67 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FED5A0051A5697AA00299C67 /* Images.xcassets */; };
+		FED5A00D1A5697AA00299C67 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FED5A00C1A5697AA00299C67 /* XCTest.framework */; };
+		FED5A00E1A5697AA00299C67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FED59FF31A5697AA00299C67 /* Foundation.framework */; };
+		FED5A00F1A5697AA00299C67 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FED59FF71A5697AA00299C67 /* UIKit.framework */; };
+		FED5A0171A5697AA00299C67 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FED5A0151A5697AA00299C67 /* InfoPlist.strings */; };
+		FED5A0191A5697AA00299C67 /* GoogleNearByTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FED5A0181A5697AA00299C67 /* GoogleNearByTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FED5A0101A5697AA00299C67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FED59FE81A5697AA00299C67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FED59FEF1A5697AA00299C67;
+			remoteInfo = GoogleNearBy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FED59FF01A5697AA00299C67 /* GoogleNearBy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleNearBy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FED59FF31A5697AA00299C67 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FED59FF51A5697AA00299C67 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FED59FF71A5697AA00299C67 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FED59FFB1A5697AA00299C67 /* GoogleNearBy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleNearBy-Info.plist"; sourceTree = "<group>"; };
+		FED59FFD1A5697AA00299C67 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FED59FFF1A5697AA00299C67 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FED5A0011A5697AA00299C67 /* GoogleNearBy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GoogleNearBy-Prefix.pch"; sourceTree = "<group>"; };
+		FED5A0021A5697AA00299C67 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FED5A0031A5697AA00299C67 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FED5A0051A5697AA00299C67 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FED5A00B1A5697AA00299C67 /* GoogleNearByTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogleNearByTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FED5A00C1A5697AA00299C67 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FED5A0141A5697AA00299C67 /* GoogleNearByTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleNearByTests-Info.plist"; sourceTree = "<group>"; };
+		FED5A0161A5697AA00299C67 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FED5A0181A5697AA00299C67 /* GoogleNearByTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoogleNearByTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FED59FED1A5697AA00299C67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FED59FF61A5697AA00299C67 /* CoreGraphics.framework in Frameworks */,
+				FED59FF81A5697AA00299C67 /* UIKit.framework in Frameworks */,
+				FED59FF41A5697AA00299C67 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FED5A0081A5697AA00299C67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FED5A00D1A5697AA00299C67 /* XCTest.framework in Frameworks */,
+				FED5A00F1A5697AA00299C67 /* UIKit.framework in Frameworks */,
+				FED5A00E1A5697AA00299C67 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FED59FE71A5697A900299C67 = {
+			isa = PBXGroup;
+			children = (
+				FED59FF91A5697AA00299C67 /* GoogleNearBy */,
+				FED5A0121A5697AA00299C67 /* GoogleNearByTests */,
+				FED59FF21A5697AA00299C67 /* Frameworks */,
+				FED59FF11A5697AA00299C67 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FED59FF11A5697AA00299C67 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FED59FF01A5697AA00299C67 /* GoogleNearBy.app */,
+				FED5A00B1A5697AA00299C67 /* GoogleNearByTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FED59FF21A5697AA00299C67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FED59FF31A5697AA00299C67 /* Foundation.framework */,
+				FED59FF51A5697AA00299C67 /* CoreGraphics.framework */,
+				FED59FF71A5697AA00299C67 /* UIKit.framework */,
+				FED5A00C1A5697AA00299C67 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FED59FF91A5697AA00299C67 /* GoogleNearBy */ = {
+			isa = PBXGroup;
+			children = (
+				FED5A0021A5697AA00299C67 /* AppDelegate.h */,
+				FED5A0031A5697AA00299C67 /* AppDelegate.m */,
+				FED5A0051A5697AA00299C67 /* Images.xcassets */,
+				FED59FFA1A5697AA00299C67 /* Supporting Files */,
+			);
+			path = GoogleNearBy;
+			sourceTree = "<group>";
+		};
+		FED59FFA1A5697AA00299C67 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FED59FFB1A5697AA00299C67 /* GoogleNearBy-Info.plist */,
+				FED59FFC1A5697AA00299C67 /* InfoPlist.strings */,
+				FED59FFF1A5697AA00299C67 /* main.m */,
+				FED5A0011A5697AA00299C67 /* GoogleNearBy-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FED5A0121A5697AA00299C67 /* GoogleNearByTests */ = {
+			isa = PBXGroup;
+			children = (
+				FED5A0181A5697AA00299C67 /* GoogleNearByTests.m */,
+				FED5A0131A5697AA00299C67 /* Supporting Files */,
+			);
+			path = GoogleNearByTests;
+			sourceTree = "<group>";
+		};
+		FED5A0131A5697AA00299C67 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FED5A0141A5697AA00299C67 /* GoogleNearByTests-Info.plist */,
+				FED5A0151A5697AA00299C67 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FED59FEF1A5697AA00299C67 /* GoogleNearBy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FED5A01C1A5697AA00299C67 /* Build configuration list for PBXNativeTarget "GoogleNearBy" */;
+			buildPhases = (
+				FED59FEC1A5697AA00299C67 /* Sources */,
+				FED59FED1A5697AA00299C67 /* Frameworks */,
+				FED59FEE1A5697AA00299C67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoogleNearBy;
+			productName = GoogleNearBy;
+			productReference = FED59FF01A5697AA00299C67 /* GoogleNearBy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FED5A00A1A5697AA00299C67 /* GoogleNearByTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FED5A01F1A5697AA00299C67 /* Build configuration list for PBXNativeTarget "GoogleNearByTests" */;
+			buildPhases = (
+				FED5A0071A5697AA00299C67 /* Sources */,
+				FED5A0081A5697AA00299C67 /* Frameworks */,
+				FED5A0091A5697AA00299C67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FED5A0111A5697AA00299C67 /* PBXTargetDependency */,
+			);
+			name = GoogleNearByTests;
+			productName = GoogleNearByTests;
+			productReference = FED5A00B1A5697AA00299C67 /* GoogleNearByTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FED59FE81A5697AA00299C67 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Adeptpros;
+				TargetAttributes = {
+					FED5A00A1A5697AA00299C67 = {
+						TestTargetID = FED59FEF1A5697AA00299C67;
+					};
+				};
+			};
+			buildConfigurationList = FED59FEB1A5697AA00299C67 /* Build configuration list for PBXProject "GoogleNearBy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FED59FE71A5697A900299C67;
+			productRefGroup = FED59FF11A5697AA00299C67 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FED59FEF1A5697AA00299C67 /* GoogleNearBy */,
+				FED5A00A1A5697AA00299C67 /* GoogleNearByTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FED59FEE1A5697AA00299C67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FED59FFE1A5697AA00299C67 /* InfoPlist.strings in Resources */,
+				FED5A0061A5697AA00299C67 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FED5A0091A5697AA00299C67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FED5A0171A5697AA00299C67 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FED59FEC1A5697AA00299C67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FED5A0041A5697AA00299C67 /* AppDelegate.m in Sources */,
+				FED5A0001A5697AA00299C67 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FED5A0071A5697AA00299C67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FED5A0191A5697AA00299C67 /* GoogleNearByTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FED5A0111A5697AA00299C67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FED59FEF1A5697AA00299C67 /* GoogleNearBy */;
+			targetProxy = FED5A0101A5697AA00299C67 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FED59FFC1A5697AA00299C67 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FED59FFD1A5697AA00299C67 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FED5A0151A5697AA00299C67 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FED5A0161A5697AA00299C67 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FED5A01A1A5697AA00299C67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FED5A01B1A5697AA00299C67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FED5A01D1A5697AA00299C67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GoogleNearBy/GoogleNearBy-Prefix.pch";
+				INFOPLIST_FILE = "GoogleNearBy/GoogleNearBy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FED5A01E1A5697AA00299C67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GoogleNearBy/GoogleNearBy-Prefix.pch";
+				INFOPLIST_FILE = "GoogleNearBy/GoogleNearBy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FED5A0201A5697AA00299C67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GoogleNearBy.app/GoogleNearBy";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GoogleNearBy/GoogleNearBy-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GoogleNearByTests/GoogleNearByTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FED5A0211A5697AA00299C67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GoogleNearBy.app/GoogleNearBy";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GoogleNearBy/GoogleNearBy-Prefix.pch";
+				INFOPLIST_FILE = "GoogleNearByTests/GoogleNearByTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FED59FEB1A5697AA00299C67 /* Build configuration list for PBXProject "GoogleNearBy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FED5A01A1A5697AA00299C67 /* Debug */,
+				FED5A01B1A5697AA00299C67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FED5A01C1A5697AA00299C67 /* Build configuration list for PBXNativeTarget "GoogleNearBy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FED5A01D1A5697AA00299C67 /* Debug */,
+				FED5A01E1A5697AA00299C67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FED5A01F1A5697AA00299C67 /* Build configuration list for PBXNativeTarget "GoogleNearByTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FED5A0201A5697AA00299C67 /* Debug */,
+				FED5A0211A5697AA00299C67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FED59FE81A5697AA00299C67 /* Project object */;
+}
