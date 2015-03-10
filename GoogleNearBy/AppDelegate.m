@@ -7,15 +7,72 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ViewController.h"
 @implementation AppDelegate
-
+@synthesize locationManager=_locationManager;
+-(void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
+{
+    NSDate* eventDate = newLocation.timestamp;
+    NSTimeInterval howRecent = [eventDate timeIntervalSinceNow];
+    if (abs(howRecent) < 15.0)
+    {
+        if(newLocation.horizontalAccuracy<35.0){
+            //Location seems pretty accurate, let's use it!
+            NSLog(@"latitude %+.6f, longitude %+.6f\n",
+                  newLocation.coordinate.latitude,
+                  newLocation.coordinate.longitude);
+            NSLog(@"Horizontal Accuracy:%f", newLocation.horizontalAccuracy);
+            [ViewController setLatitude:[NSString stringWithFormat:@"%.6f",newLocation.coordinate.latitude] andLongitude:[NSString stringWithFormat:@"%.6f",newLocation.coordinate.longitude]];
+            [[ViewController sharedInsta] getJsonData];
+            //Optional: turn off location services once we've gotten a good location
+        }
+        //Location timestamp is within the last 15.0 seconds, let's use it!
+    }
+}
+//- (void)locationManager:(CLLocationManager *)manager
+//	 didUpdateLocations:(NSArray *)locations
+//{
+//    CLLocation *newLocation=[locations objectAtIndex:0];
+//    NSDate* eventDate = newLocation.timestamp;
+//    NSTimeInterval howRecent = [eventDate timeIntervalSinceNow];
+//    if (abs(howRecent) < 15.0)
+//    {
+//        if(newLocation.horizontalAccuracy<35.0){
+//            //Location seems pretty accurate, let's use it!
+//            NSLog(@"latitude %+.6f, longitude %+.6f\n",
+//                  newLocation.coordinate.latitude,
+//                  newLocation.coordinate.longitude);
+//            NSLog(@"Horizontal Accuracy:%f", newLocation.horizontalAccuracy);
+//            [ViewController setLatitude:[NSString stringWithFormat:@"%.6f",newLocation.coordinate.latitude] andLongitude:[NSString stringWithFormat:@"%.6f",newLocation.coordinate.longitude]];
+//            [[ViewController sharedInsta] getJsonData];
+//            //Optional: turn off location services once we've gotten a good location
+////            [manager stopUpdatingLocation];
+//        }
+//        //Location timestamp is within the last 15.0 seconds, let's use it!
+//    }
+//}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    if(self.locationManager==nil){
+        _locationManager=[[CLLocationManager alloc] init];
+        //I'm using ARC with this project so no need to release
+        
+        _locationManager.delegate=self;
+        _locationManager.purpose = @"We will try to tell you where you are if you get lost";
+        _locationManager.desiredAccuracy=kCLLocationAccuracyBest;
+        _locationManager.distanceFilter=500;
+        self.locationManager=_locationManager;
+    }
+//    if([CLLocationManager locationServicesEnabled]){
+//        [self.locationManager startUpdatingLocation];
+//    }
+    ViewController *obj=[[ViewController alloc]initWithNibName:@"ViewController" bundle:nil];
+    UINavigationController *nav=[[UINavigationController alloc]initWithRootViewController:obj];
+    [self.window setRootViewController:nav];
     return YES;
 }
 
