@@ -23,6 +23,14 @@
 		6CAB2A861A60FC2F00F66F18 /* out_color.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAB2A851A60FC2F00F66F18 /* out_color.png */; };
 		6CAB2A881A61065F00F66F18 /* vm_blue_dot_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAB2A871A61065F00F66F18 /* vm_blue_dot_on.png */; };
 		6CAB2A8A1A61310700F66F18 /* ic_maps_indicator_startpoint_list.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAB2A891A61310700F66F18 /* ic_maps_indicator_startpoint_list.png */; };
+		6CB57E7A1AAFFDCF00AF4513 /* TabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB57E781AAFFDCF00AF4513 /* TabViewController.m */; };
+		6CB57E7B1AAFFDCF00AF4513 /* TabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CB57E791AAFFDCF00AF4513 /* TabViewController.xib */; };
+		6CB57E7E1AB0016A00AF4513 /* ic_maps_indicator_startpoint_list copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CB57E7C1AB0016A00AF4513 /* ic_maps_indicator_startpoint_list copy.png */; };
+		6CB57E7F1AB0016A00AF4513 /* mode_transit_icon copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CB57E7D1AB0016A00AF4513 /* mode_transit_icon copy.png */; };
+		6CB57EB81AB01E0000AF4513 /* NearestAttractionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB57EB61AB01E0000AF4513 /* NearestAttractionsViewController.m */; };
+		6CB57EB91AB01E0000AF4513 /* NearestAttractionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CB57EB71AB01E0000AF4513 /* NearestAttractionsViewController.xib */; };
+		6CB57EBD1AB020A200AF4513 /* NearestAttractionsListTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB57EBB1AB020A200AF4513 /* NearestAttractionsListTableTableViewController.m */; };
+		6CB57EBE1AB020A200AF4513 /* NearestAttractionsListTableTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CB57EBC1AB020A200AF4513 /* NearestAttractionsListTableTableViewController.xib */; };
 		6CC94A041A58444D008EFEB3 /* ListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC94A021A58444D008EFEB3 /* ListTableViewController.m */; };
 		6CC94A051A58444D008EFEB3 /* ListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CC94A031A58444D008EFEB3 /* ListTableViewController.xib */; };
 		FE27C84C1A5FC329007769F1 /* walk_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FE27C84B1A5FC329007769F1 /* walk_icon.png */; };
@@ -78,6 +86,17 @@
 		6CAB2A851A60FC2F00F66F18 /* out_color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = out_color.png; sourceTree = "<group>"; };
 		6CAB2A871A61065F00F66F18 /* vm_blue_dot_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vm_blue_dot_on.png; sourceTree = "<group>"; };
 		6CAB2A891A61310700F66F18 /* ic_maps_indicator_startpoint_list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_maps_indicator_startpoint_list.png; sourceTree = "<group>"; };
+		6CB57E771AAFFDCF00AF4513 /* TabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabViewController.h; sourceTree = "<group>"; };
+		6CB57E781AAFFDCF00AF4513 /* TabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabViewController.m; sourceTree = "<group>"; };
+		6CB57E791AAFFDCF00AF4513 /* TabViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabViewController.xib; sourceTree = "<group>"; };
+		6CB57E7C1AB0016A00AF4513 /* ic_maps_indicator_startpoint_list copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_maps_indicator_startpoint_list copy.png"; sourceTree = "<group>"; };
+		6CB57E7D1AB0016A00AF4513 /* mode_transit_icon copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mode_transit_icon copy.png"; sourceTree = "<group>"; };
+		6CB57EB51AB01E0000AF4513 /* NearestAttractionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NearestAttractionsViewController.h; sourceTree = "<group>"; };
+		6CB57EB61AB01E0000AF4513 /* NearestAttractionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearestAttractionsViewController.m; sourceTree = "<group>"; };
+		6CB57EB71AB01E0000AF4513 /* NearestAttractionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NearestAttractionsViewController.xib; sourceTree = "<group>"; };
+		6CB57EBA1AB020A200AF4513 /* NearestAttractionsListTableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NearestAttractionsListTableTableViewController.h; sourceTree = "<group>"; };
+		6CB57EBB1AB020A200AF4513 /* NearestAttractionsListTableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearestAttractionsListTableTableViewController.m; sourceTree = "<group>"; };
+		6CB57EBC1AB020A200AF4513 /* NearestAttractionsListTableTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NearestAttractionsListTableTableViewController.xib; sourceTree = "<group>"; };
 		6CC94A011A58444D008EFEB3 /* ListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTableViewController.h; sourceTree = "<group>"; };
 		6CC94A021A58444D008EFEB3 /* ListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTableViewController.m; sourceTree = "<group>"; };
 		6CC94A031A58444D008EFEB3 /* ListTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListTableViewController.xib; sourceTree = "<group>"; };
@@ -132,6 +151,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6CB57EBF1AB0278700AF4513 /* Nearest Attractions Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6CB57EB51AB01E0000AF4513 /* NearestAttractionsViewController.h */,
+				6CB57EB61AB01E0000AF4513 /* NearestAttractionsViewController.m */,
+				6CB57EB71AB01E0000AF4513 /* NearestAttractionsViewController.xib */,
+				6CB57EBA1AB020A200AF4513 /* NearestAttractionsListTableTableViewController.h */,
+				6CB57EBB1AB020A200AF4513 /* NearestAttractionsListTableTableViewController.m */,
+				6CB57EBC1AB020A200AF4513 /* NearestAttractionsListTableTableViewController.xib */,
+				6C6024CE1A58BBFD009DFC1E /* MapLocator.h */,
+				6C6024CF1A58BBFD009DFC1E /* MapLocator.m */,
+				6C6024D01A58BBFD009DFC1E /* MapLocator.xib */,
+			);
+			name = "Nearest Attractions Controllers";
+			sourceTree = "<group>";
+		};
+		6CB57EC01AB0280A00AF4513 /* BTMC BUS Search Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FED5A0241A569FDD00299C67 /* ViewController.h */,
+				FED5A0251A569FDD00299C67 /* ViewController.m */,
+				FED5A0261A569FDD00299C67 /* ViewController.xib */,
+				6CC94A011A58444D008EFEB3 /* ListTableViewController.h */,
+				6CC94A021A58444D008EFEB3 /* ListTableViewController.m */,
+				6CC94A031A58444D008EFEB3 /* ListTableViewController.xib */,
+				6CAB2A7E1A60E7C800F66F18 /* DeatilsTableViewController.h */,
+				6CAB2A7F1A60E7C800F66F18 /* DeatilsTableViewController.m */,
+				6CAB2A801A60E7C800F66F18 /* DeatilsTableViewController.xib */,
+				6C5A759B1AAE6A1000D692B2 /* MapViewViewController.h */,
+				6C5A759C1AAE6A1000D692B2 /* MapViewViewController.m */,
+				6C13A1601AAFE96B00CC76A9 /* MapView.xib */,
+				6CA13A3F1A6252F300C52701 /* MKPolyline+MKPolyline_EncodedString.h */,
+				6CA13A401A6252F300C52701 /* MKPolyline+MKPolyline_EncodedString.m */,
+			);
+			name = "BTMC BUS Search Controllers";
+			sourceTree = "<group>";
+		};
 		FE27C84A1A5FC318007769F1 /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +197,8 @@
 				6CAB2A851A60FC2F00F66F18 /* out_color.png */,
 				FE27C84F1A5FC492007769F1 /* mode_transit_icon.png */,
 				6CAB2A871A61065F00F66F18 /* vm_blue_dot_on.png */,
+				6CB57E7C1AB0016A00AF4513 /* ic_maps_indicator_startpoint_list copy.png */,
+				6CB57E7D1AB0016A00AF4513 /* mode_transit_icon copy.png */,
 				6CAB2A891A61310700F66F18 /* ic_maps_indicator_startpoint_list.png */,
 				6C0D762A1A61321B00D2078A /* ic_maps_indicator_endpoint_route.png */,
 			);
@@ -184,28 +242,16 @@
 			children = (
 				FED5A0021A5697AA00299C67 /* AppDelegate.h */,
 				FED5A0031A5697AA00299C67 /* AppDelegate.m */,
-				FED5A0241A569FDD00299C67 /* ViewController.h */,
-				FED5A0251A569FDD00299C67 /* ViewController.m */,
-				FED5A0261A569FDD00299C67 /* ViewController.xib */,
+				6CB57E771AAFFDCF00AF4513 /* TabViewController.h */,
+				6CB57E781AAFFDCF00AF4513 /* TabViewController.m */,
+				6CB57E791AAFFDCF00AF4513 /* TabViewController.xib */,
 				6C6024C41A58B20B009DFC1E /* customCell.h */,
 				6C6024C51A58B20B009DFC1E /* customCell.m */,
 				6C6024C61A58B20B009DFC1E /* customCell.xib */,
-				6CC94A011A58444D008EFEB3 /* ListTableViewController.h */,
-				6CC94A021A58444D008EFEB3 /* ListTableViewController.m */,
-				6CC94A031A58444D008EFEB3 /* ListTableViewController.xib */,
-				6CAB2A7E1A60E7C800F66F18 /* DeatilsTableViewController.h */,
-				6CAB2A7F1A60E7C800F66F18 /* DeatilsTableViewController.m */,
-				6CAB2A801A60E7C800F66F18 /* DeatilsTableViewController.xib */,
-				6C6024CE1A58BBFD009DFC1E /* MapLocator.h */,
-				6C6024CF1A58BBFD009DFC1E /* MapLocator.m */,
-				6C5A759B1AAE6A1000D692B2 /* MapViewViewController.h */,
-				6C5A759C1AAE6A1000D692B2 /* MapViewViewController.m */,
-				6C13A1601AAFE96B00CC76A9 /* MapView.xib */,
-				6CA13A3F1A6252F300C52701 /* MKPolyline+MKPolyline_EncodedString.h */,
-				6CA13A401A6252F300C52701 /* MKPolyline+MKPolyline_EncodedString.m */,
-				6C6024D01A58BBFD009DFC1E /* MapLocator.xib */,
+				6CB57EC01AB0280A00AF4513 /* BTMC BUS Search Controllers */,
 				6C60250E1A58CD08009DFC1E /* MyLocaion.h */,
 				6C60250F1A58CD08009DFC1E /* MyLocaion.m */,
+				6CB57EBF1AB0278700AF4513 /* Nearest Attractions Controllers */,
 				FED5A0051A5697AA00299C67 /* Images.xcassets */,
 				FE27C84A1A5FC318007769F1 /* Images */,
 				FED59FFA1A5697AA00299C67 /* Supporting Files */,
@@ -319,19 +365,24 @@
 			files = (
 				FE27C8501A5FC492007769F1 /* mode_transit_icon.png in Resources */,
 				6C6024C81A58B20B009DFC1E /* customCell.xib in Resources */,
+				6CB57EB91AB01E0000AF4513 /* NearestAttractionsViewController.xib in Resources */,
+				6CB57EBE1AB020A200AF4513 /* NearestAttractionsListTableTableViewController.xib in Resources */,
 				6CAB2A881A61065F00F66F18 /* vm_blue_dot_on.png in Resources */,
 				FED59FFE1A5697AA00299C67 /* InfoPlist.strings in Resources */,
 				FE27C84C1A5FC329007769F1 /* walk_icon.png in Resources */,
 				6C13A1611AAFE96B00CC76A9 /* MapView.xib in Resources */,
 				6C0D762B1A61321B00D2078A /* ic_maps_indicator_endpoint_route.png in Resources */,
 				6CAB2A821A60E7C800F66F18 /* DeatilsTableViewController.xib in Resources */,
+				6CB57E7B1AAFFDCF00AF4513 /* TabViewController.xib in Resources */,
 				6CAB2A8A1A61310700F66F18 /* ic_maps_indicator_startpoint_list.png in Resources */,
 				FED5A0281A569FDD00299C67 /* ViewController.xib in Resources */,
 				6CAB2A841A60F8EF00F66F18 /* vm_gray_dot_off.png in Resources */,
 				FE27C84E1A5FC410007769F1 /* rideabout_directions_arrow_gray.png in Resources */,
 				6C6024D21A58BBFD009DFC1E /* MapLocator.xib in Resources */,
 				FED5A0061A5697AA00299C67 /* Images.xcassets in Resources */,
+				6CB57E7F1AB0016A00AF4513 /* mode_transit_icon copy.png in Resources */,
 				6CAB2A861A60FC2F00F66F18 /* out_color.png in Resources */,
+				6CB57E7E1AB0016A00AF4513 /* ic_maps_indicator_startpoint_list copy.png in Resources */,
 				6CC94A051A58444D008EFEB3 /* ListTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,11 +402,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CB57E7A1AAFFDCF00AF4513 /* TabViewController.m in Sources */,
 				6CA13A411A6252F300C52701 /* MKPolyline+MKPolyline_EncodedString.m in Sources */,
+				6CB57EBD1AB020A200AF4513 /* NearestAttractionsListTableTableViewController.m in Sources */,
 				6C6024C71A58B20B009DFC1E /* customCell.m in Sources */,
 				6C5A759D1AAE6A1000D692B2 /* MapViewViewController.m in Sources */,
 				FED5A0271A569FDD00299C67 /* ViewController.m in Sources */,
 				6C6025101A58CD08009DFC1E /* MyLocaion.m in Sources */,
+				6CB57EB81AB01E0000AF4513 /* NearestAttractionsViewController.m in Sources */,
 				FED5A0041A5697AA00299C67 /* AppDelegate.m in Sources */,
 				6CAB2A811A60E7C800F66F18 /* DeatilsTableViewController.m in Sources */,
 				FED5A0001A5697AA00299C67 /* main.m in Sources */,

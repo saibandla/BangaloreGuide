@@ -12,6 +12,10 @@
 {
     
 }
+@property(nonatomic,strong)IBOutlet UILabel *lbl1;
+@property(nonatomic,strong)IBOutlet UILabel *lbl2;
+
+@property(nonatomic,strong)IBOutlet UIImageView *imgV;
 @property(nonatomic,strong)IBOutlet UILabel *departure_time;
 @property(nonatomic,strong)IBOutlet UILabel *arrival_time;
 @property(nonatomic,strong)IBOutlet UILabel *duration;

@@ -58,7 +58,8 @@ static int textFlag;
     resultList2.layer.borderWidth=1;
     resultList2.layer.borderColor=resultList.separatorColor.CGColor;
     [resultList2 setHidden:YES];
-    
+    self.tabBarItem.image=[UIImage imageNamed:@"mode_transit_icon copy.png"];
+    self.tabBarItem.title=@"BMTC";
    
     
     loadscreen=[[UIView alloc]initWithFrame:[UIScreen mainScreen].bounds];
@@ -71,7 +72,10 @@ static int textFlag;
     // Do any additional setup after loading the view from its nib.
 }
 
-
+-(void)setDestination:(NSString *)destaddr
+{
+    address.text=destaddr;
+}
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [resultList setHidden:YES];

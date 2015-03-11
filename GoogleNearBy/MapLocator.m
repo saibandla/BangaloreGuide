@@ -8,6 +8,7 @@
 
 #import "MapLocator.h"
 #import "MyLocaion.h"
+#import "ViewController.h"
 @interface MapLocator ()
 
 @end
@@ -36,6 +37,8 @@
     for (id<MKAnnotation> annotation in _mapView.annotations) {
         [_mapView removeAnnotation:annotation];
     }
+    UIBarButtonItem *searchBus=[[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"mode_transit_icon.png"] style:UIBarButtonItemStylePlain target:self action:@selector(searchBus)];
+    self.navigationItem.rightBarButtonItem=searchBus;
     MKCoordinateRegion region = { { 0.0, 0.0 }, { 0.0, 0.0 } };
     region.center.latitude = coordinates.latitude;
     region.center.longitude = coordinates.longitude;
@@ -48,7 +51,12 @@
 
     // Do any additional setup after loading the view from its nib.
 }
-
+-(void)searchBus
+{UINavigationController *searchNav=(UINavigationController *) self.tabBarController.viewControllers[0];
+           [searchNav popToRootViewControllerAnimated:YES];
+    [ (ViewController *) searchNav.topViewController setDestination:address];
+    [self.tabBarController setSelectedIndex:0];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

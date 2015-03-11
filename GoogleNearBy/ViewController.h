@@ -11,8 +11,8 @@ static NSString *latitude,*longitude;
 @interface ViewController : UIViewController<UITextFieldDelegate,UITableViewDataSource,UITableViewDelegate>
 {
     IBOutlet UITextField *address;
-    IBOutlet UITextField *destination;
     IBOutlet UITableView *resultList;
+    IBOutlet UITextField *destination;
     IBOutlet UITableView *resultList2;
 
     IBOutlet UIView *view1;
@@ -22,5 +22,6 @@ static NSString *latitude,*longitude;
 +(void)setLatitude:(NSString *)lat andLongitude:(NSString*)longi;
 -(void)getJsonData;
 +(id)sharedInsta;
+-(void)setDestination:(NSString *)destaddr;
 - (void)fetchedData:(NSData *)responseData;
 @end

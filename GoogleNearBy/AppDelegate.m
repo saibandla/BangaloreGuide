@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "NearestAttractionsViewController.h"
+#import "TabViewController.h"
 @implementation AppDelegate
 @synthesize locationManager=_locationManager;
 -(void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
@@ -71,8 +73,17 @@
 //        [self.locationManager startUpdatingLocation];
 //    }
     ViewController *obj=[[ViewController alloc]initWithNibName:@"ViewController" bundle:nil];
-    UINavigationController *nav=[[UINavigationController alloc]initWithRootViewController:obj];
-    [self.window setRootViewController:nav];
+    UINavigationController *nav1=[[UINavigationController alloc]initWithRootViewController:obj];
+    nav1.tabBarItem.image=[UIImage imageNamed:@"mode_transit_icon copy.png"];
+    nav1.tabBarItem.title=@"BMTC";
+    NearestAttractionsViewController *obbj2=[[NearestAttractionsViewController alloc]initWithNibName:@"NearestAttractionsViewController" bundle:nil];
+    UINavigationController *nav2=[[UINavigationController alloc]initWithRootViewController:obbj2];
+    [nav2.tabBarItem setImage:[UIImage imageNamed:@"ic_maps_indicator_startpoint_list copy.png"]];
+    [nav2.tabBarItem setTitle:@"Nearest Attractions"];
+    TabViewController *tabview=[[TabViewController alloc]initWithNibName:@"TabViewController" bundle:nil];
+    tabview.viewControllers=@[nav1,nav2];
+    
+    [self.window setRootViewController:tabview];
     return YES;
 }
 

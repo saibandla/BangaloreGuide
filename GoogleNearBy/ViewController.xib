@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
             <connections>
                 <outlet property="address" destination="30h-ip-oUB" id="78S-bh-6Sj"/>
-                <outlet property="destination" destination="6hL-2F-to1" id="QS9-9u-4Qv"/>
+                <outlet property="destination" destination="6hL-2F-to1" id="Mqk-ZE-KKZ"/>
                 <outlet property="resultList" destination="FDz-hd-hfa" id="rIJ-PW-Lh4"/>
                 <outlet property="resultList2" destination="lgt-qv-1CK" id="2k5-zD-rZc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -42,11 +43,17 @@
                             <rect key="frame" x="58" y="101" width="213" height="30"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="cPk-mG-JTm"/>
+                            </connections>
                         </textField>
                         <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Destination" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="6hL-2F-to1">
                             <rect key="frame" x="58" y="171" width="213" height="30"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="pmQ-jP-fnO"/>
+                            </connections>
                         </textField>
                         <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="FDz-hd-hfa">
                             <rect key="frame" x="58" y="131" width="213" height="154"/>
@@ -55,10 +62,6 @@
                         <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="UyR-Ok-1l6">
                             <rect key="frame" x="131" y="237" width="37" height="37"/>
                         </activityIndicatorView>
-                        <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="lgt-qv-1CK">
-                            <rect key="frame" x="58" y="200" width="213" height="154"/>
-                            <color key="separatorColor" red="0.88816873460000001" green="0.9477193813" blue="0.41506611989999997" alpha="1" colorSpace="calibratedRGB"/>
-                        </tableView>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GX4-Dn-fsC">
                             <rect key="frame" x="128" y="217" width="63" height="30"/>
                             <state key="normal" title="Search">
@@ -68,11 +71,25 @@
                                 <action selector="startSesrch:" destination="-1" eventType="touchUpInside" id="KNe-xO-qSr"/>
                             </connections>
                         </button>
+                        <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="lgt-qv-1CK">
+                            <rect key="frame" x="58" y="200" width="213" height="154"/>
+                            <color key="separatorColor" red="0.88816873460000001" green="0.9477193813" blue="0.41506611989999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="yCg-yJ-o1u"/>
+                                <outlet property="delegate" destination="-1" id="NtQ-rz-eR2"/>
+                            </connections>
+                        </tableView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
         </view>
     </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>
