@@ -46,7 +46,11 @@ NSString *mapdatau;
 }
 -(void)showMapView
 {
-    
+    MapViewViewController *mapView=[[MapViewViewController alloc]initWithNibName:@"MapView" bundle:nil];
+    mapView.mapdata=mapdatau;
+    mapView.source=_source;
+    mapView.dest=_dest;
+    [self.navigationController pushViewController:mapView animated:YES];
 }
 #pragma mark - Table view data source
 

@@ -16,5 +16,6 @@
     CLLocationCoordinate2D coordinates;
 }
 @property(nonatomic, retain) IBOutlet MKMapView *mapView;
+@property(nonatomic,assign) CLLocationCoordinate2D coordinates;
 -(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil LocationName:(NSString *)name LocationAddress:(NSString *)address Coordinates:(CLLocationCoordinate2D )coords;
 @end

@@ -11,6 +11,7 @@
 #import "customCell.h"
 #import "DeatilsTableViewController.h"
 #import "MapLocator.h"
+#import "MyLocaion.h"
 @interface ListTableViewController ()
 
 @end
@@ -18,6 +19,7 @@
 @implementation ListTableViewController
 @synthesize data;
 NSArray *resultSet;
+
 NSMutableArray *imagesdata;
 NSMutableArray *routeseleted;
 - (void)viewDidLoad {
@@ -58,6 +60,8 @@ NSMutableArray *routeseleted;
     NSDictionary *routeData=[resultSet objectAtIndex:indexPath.row];
     UITableViewCell *selectedCell=[tableView cellForRowAtIndexPath:indexPath];
      NSArray *steps=[[[routeData objectForKey:@"legs"] objectAtIndex:0]objectForKey:@"steps"];
+    MyLocation *sourceAnnotaion=[[MyLocation alloc]initWithName:[[[routeData objectForKey:@"legs"] objectAtIndex:0]objectForKey:@"start_address"] address:[[[routeData objectForKey:@"legs"] objectAtIndex:0]objectForKey:@"start_address"]  coordinate:CLLocationCoordinate2DMake([[[[[routeData objectForKey:@"legs"] objectAtIndex:0]objectForKey:@"start_location"] objectForKey:@"lat"] doubleValue], [[[[[routeData objectForKey:@"legs"] objectAtIndex:0]objectForKey:@"start_location"] objectForKey:@"lng"] doubleValue])];
+    MyLocation *destAnnotaion=[[MyLocation alloc]initWithName:[[[routeData objectForKey:@"legs"] objectAtIndex:0]objectForKey:@"end_address"]  address:[[[routeData objectForKey:@"legs"] objectAtIndex:0]objectForKey:@"end_address"]  coordinate:CLLocationCoordinate2DMake([[[[[routeData objectForKey:@"legs"] objectAtIndex:0]objectForKey:@"start_location"] objectForKey:@"lat"] doubleValue], [[[[[routeData objectForKey:@"legs"] objectAtIndex:0]objectForKey:@"end_location"] objectForKey:@"lng"] doubleValue])];
     for(id step in steps)
     {
         NSString *travel_mode=[step objectForKey:@"travel_mode"];
@@ -104,6 +108,8 @@ NSMutableArray *routeseleted;
     }
     NSLog(@"/n/n/n%@",routeseleted);
     DeatilsTableViewController *obj=[[DeatilsTableViewController alloc] initWithNibName:@"DeatilsTableViewController" bundle:nil headerView:selectedCell.contentView routeData:routeseleted mapdata:[[routeData objectForKey:@"overview_polyline"] objectForKey:@"points"]];
+    obj.source=sourceAnnotaion;
+    obj.dest=destAnnotaion;
     [self.navigationController pushViewController:obj animated:YES];
   
 }

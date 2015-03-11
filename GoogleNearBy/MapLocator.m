@@ -13,6 +13,7 @@
 @end
 
 @implementation MapLocator
+@synthesize coordinates;
 -(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil LocationName:(NSString *)Locname LocationAddress:(NSString *)addr Coordinates:(CLLocationCoordinate2D )coords
 {
     self=[super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -24,6 +25,10 @@
         coordinates=coords;
     }
     return  self;
+}
+-(CLLocationCoordinate2D )getCords
+{
+    return coordinates;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];

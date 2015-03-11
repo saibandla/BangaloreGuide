@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6C0D762B1A61321B00D2078A /* ic_maps_indicator_endpoint_route.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C0D762A1A61321B00D2078A /* ic_maps_indicator_endpoint_route.png */; };
+		6C13A1611AAFE96B00CC76A9 /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C13A1601AAFE96B00CC76A9 /* MapView.xib */; };
 		6C5A759D1AAE6A1000D692B2 /* MapViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A759C1AAE6A1000D692B2 /* MapViewViewController.m */; };
 		6C6024C71A58B20B009DFC1E /* customCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6024C51A58B20B009DFC1E /* customCell.m */; };
 		6C6024C81A58B20B009DFC1E /* customCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C6024C61A58B20B009DFC1E /* customCell.xib */; };
@@ -56,6 +57,7 @@
 
 /* Begin PBXFileReference section */
 		6C0D762A1A61321B00D2078A /* ic_maps_indicator_endpoint_route.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_maps_indicator_endpoint_route.png; sourceTree = "<group>"; };
+		6C13A1601AAFE96B00CC76A9 /* MapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
 		6C5A759B1AAE6A1000D692B2 /* MapViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewViewController.h; sourceTree = "<group>"; };
 		6C5A759C1AAE6A1000D692B2 /* MapViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewViewController.m; sourceTree = "<group>"; };
 		6C6024C41A58B20B009DFC1E /* customCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customCell.h; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 				6C6024CF1A58BBFD009DFC1E /* MapLocator.m */,
 				6C5A759B1AAE6A1000D692B2 /* MapViewViewController.h */,
 				6C5A759C1AAE6A1000D692B2 /* MapViewViewController.m */,
+				6C13A1601AAFE96B00CC76A9 /* MapView.xib */,
 				6CA13A3F1A6252F300C52701 /* MKPolyline+MKPolyline_EncodedString.h */,
 				6CA13A401A6252F300C52701 /* MKPolyline+MKPolyline_EncodedString.m */,
 				6C6024D01A58BBFD009DFC1E /* MapLocator.xib */,
@@ -319,6 +322,7 @@
 				6CAB2A881A61065F00F66F18 /* vm_blue_dot_on.png in Resources */,
 				FED59FFE1A5697AA00299C67 /* InfoPlist.strings in Resources */,
 				FE27C84C1A5FC329007769F1 /* walk_icon.png in Resources */,
+				6C13A1611AAFE96B00CC76A9 /* MapView.xib in Resources */,
 				6C0D762B1A61321B00D2078A /* ic_maps_indicator_endpoint_route.png in Resources */,
 				6CAB2A821A60E7C800F66F18 /* DeatilsTableViewController.xib in Resources */,
 				6CAB2A8A1A61310700F66F18 /* ic_maps_indicator_startpoint_list.png in Resources */,

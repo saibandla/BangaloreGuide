@@ -7,8 +7,9 @@
 //
 
 #import "MapViewViewController.h"
-
+#import "MKPolyline+MKPolyline_EncodedString.h"
 @interface MapViewViewController ()
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
 
 @end
 
@@ -16,6 +17,14 @@
 @synthesize mapdata;
 - (void)viewDidLoad {
     [super viewDidLoad];
+    MKCoordinateRegion region = { { 0.0, 0.0 }, { 0.0, 0.0 } };
+    region.center.latitude = _source.coordinate.latitude;
+    region.center.longitude = _source.coordinate.longitude;
+    region.span.longitudeDelta = 0.1f;
+    region.span.longitudeDelta = 0.1f;
+    [_mapView setRegion:region];
+    [_mapView addAnnotations:@[_source,_dest]];
+    [_mapView addOverlay:[MKPolyline polylineWithEncodedString:mapdata]];
     // Do any additional setup after loading the view.
 }
 
@@ -23,7 +32,12 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+-(MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay{
+    MKPolylineRenderer *polylineRender = [[MKPolylineRenderer alloc] initWithOverlay:overlay];
+    polylineRender.lineWidth = 3.0f;
+    polylineRender.strokeColor = [UIColor blueColor];
+    return polylineRender;
+}
 /*
 #pragma mark - Navigation
 
